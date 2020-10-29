@@ -1,5 +1,4 @@
 // DOM manipulation and event handling page//
-
 const cityForm = document.querySelector("form");
 const card = document.querySelector(".card");
 const details = document.querySelector(".details");
@@ -35,9 +34,6 @@ const updateUI = (data) => {
         timeSrc = "img/day.svg";
     }
     time.setAttribute("src", timeSrc);
-
-
-
 
 
     //remove display:none for the card div
