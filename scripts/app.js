@@ -32,13 +32,16 @@ const updateUI = (data) => {
 
     //update the night/day images
     let timeSrc = null;
-    if (cityDets.dt >= cityDets.sys.sunset || cityDets.dt < cityDets.sys.sunset ){
-        timeSrc = "img/night.svg";   
+    if (cityDets.dt >= cityDets.sys.sunrise && cityDets.dt < cityDets.sys.sunset ){
+        timeSrc = "img/day.svg";   
     }else{
-        timeSrc = "img/day.svg";
+        timeSrc = "img/night.svg";
     }
     time.setAttribute("src", timeSrc);
-
+    
+    // console.log(cityDets.sys.sunrise);
+    // console.log(cityDets.sys.sunset);
+    // console.log(cityDets.dt);
 
     //remove display:none for the card div
     if(card.classList.contains("d-none")){

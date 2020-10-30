@@ -22,7 +22,7 @@ The Main objective of this project was to build a real time weather app that all
 To run this project simply go to my Github repository and download all the files, click on index.html to get started!
 
 ### Project URL
-This project is currently hosted at:
+This project is currently hosted at: https://snaxbox.github.io/weather_app/
 
 
 
