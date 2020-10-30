@@ -1,4 +1,9 @@
 ## Weather_app
+该项目的主要目的是构建一个实时天气应用程序，该应用程序允许用户搜索城市并显示此城市当前的时刻天气和温度。中间的小图标也会根据当前城市天气而改变。
+用到了openweathermap.org提供的API获取城市信息和天气图标。
+
+![Image of ninja form](weather.png)
+
 ### About
 The Main objective of this project was to build a real time weather app that allows users to search a city's location and display its weather and temperature at that present moment 
 

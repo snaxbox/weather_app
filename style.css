@@ -17,3 +17,7 @@ body{
     width: 60px;
     margin-bottom: -30px;
 }
+
+body > div > div > div.text-uppercase.text-center.details > div.my-3{
+    font-size: 27px;
+}
