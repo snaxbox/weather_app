@@ -1,5 +1,4 @@
 ## Weather_app
-
 ### About
 The Main objective of this project was to build a real time weather app that allows users to search a city's location and display its weather and temperature at that present moment 
 
