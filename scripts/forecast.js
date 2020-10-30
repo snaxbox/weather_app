@@ -1,5 +1,8 @@
 // api interactions
+//****************** */
 
+
+// api key from openweathermapAPI
 const key = '5682504a1d733404f8f40e8b349b4c5f';
    
 
@@ -12,7 +15,7 @@ const getCity = async (city) =>{
     const response = await fetch(base + query);
     const data = await response.json();
 
-    return  data;
+    return data;
 
 
 }

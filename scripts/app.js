@@ -1,4 +1,7 @@
 // DOM manipulation and event handling page//
+//***************************************** */
+
+// obtain references from index.html
 const cityForm = document.querySelector("form");
 const card = document.querySelector(".card");
 const details = document.querySelector(".details");
@@ -7,6 +10,7 @@ const time = document.querySelector("img.time");
 const icon = document.querySelector(".icon img");
 
 
+//change the DOM
 const updateUI = (data) => {
 
     const cityDets = data.cityDets;
@@ -28,7 +32,7 @@ const updateUI = (data) => {
 
     //update the night/day images
     let timeSrc = null;
-    if (cityDets.dt >= cityDets.sys.sunset){
+    if (cityDets.dt >= cityDets.sys.sunset || cityDets.dt < cityDets.sys.sunset ){
         timeSrc = "img/night.svg";   
     }else{
         timeSrc = "img/day.svg";
@@ -43,10 +47,10 @@ const updateUI = (data) => {
     console.log(data);
 }
 
-
+// use the returned object{cityDets} in the updateUI function 
 const updateCity = async(city)=>{
+    //calls the getCity function from forecast.js which requests data from the openmapAPI 
     const cityDets = await getCity(city)
-
     return{
         cityDets: cityDets
     }
